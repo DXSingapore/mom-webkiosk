@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Congress Chatbot</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <style>
+        #pagecontainer {
+            position: absolute;
+            display: table;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 999999;
+        }
+
+        #buttoncontainer {
+            display: table-row;
+            height: 0;
+        }
+
+        #botchatcontainer {
+            display: table-row;
+            width: 100%;
+            height: 100%;
+        }
+
+        #botchat {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div id="pagecontainer">
+        <div id="buttoncontainer">
+            <div style="padding:10px">
+                <button type="button" id="btn-newsession" class="btn btn-primary">New user? Click here to start a new session.</button>
+            </div>
+        </div>
+        <div id="botchatcontainer">
+            <iframe src='https://webchat.botframework.com/embed/summitbot?s=TWtIVrRzzvY.cwA.NQs.bDchN9DDq60eEqmUg688drKO_LayCIam6LdhtRw3434'
+                id="botchat"></iframe>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
